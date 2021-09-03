@@ -3,7 +3,7 @@
 :root {
     --font-family: Roboto;
     --clr-btn: rgba(238, 238, 238, 0.93);
-    --clr-active-btn: #43689b;
+    --clr-active-btn: #387CA6;
     --clr-active-font-btn: white;
 }
 
@@ -12,7 +12,7 @@ body {
     :
 }
 
-ul {
+.filterList {
     padding-inline-start: 0;
     display: flex;
     justify-content: center;
@@ -21,13 +21,13 @@ ul {
     list-style: none;
 }
 
-li {
+.filterList .filterButton {
     cursor: pointer;
     padding: 10px 20px;
     background: var(--clr-btn);
 }
 
-li.active {
+.filterList .filterButton.active {
     background: var(--clr-active-btn);
     color: var(--clr-active-font-btn);
 }
@@ -48,6 +48,10 @@ li.active {
     align-items: center;
     box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.62);
     position: relative;
+}
+
+.product .itemBox.hide {
+    display: none;
 }
 
 .product .itemBox img {

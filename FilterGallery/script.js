@@ -12,10 +12,10 @@ for (const filterButton of filterButtons) {
             const item = itemBox.getAttribute("data-item");
             console.log(item + " " + filter)
 
-            itemBox.style.display = 'flex';
+            itemBox.classList.remove("hide")
 
             if (item !== filter && "all" !== filter) {
-                itemBox.style.display = 'none';
+                itemBox.classList.add("hide");
             }
         }
     });
